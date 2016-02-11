@@ -1,0 +1,26 @@
+{
+  "name": "Add parameters to url",
+  "version": "1.0",
+  "manifest_version": 2,
+  "description": "Add some parameters to url",
+  "page_action": {
+    "default_icon": "images/image27.png",
+    "default_title": "Add more parameters to Url",
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "declarativeContent",
+    "webRequest",
+    "webRequestBlocking",
+    "<all_urls>",
+    "tabs"
+  ],
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "options_ui": {
+    "page": "options.html",
+    "chrome_style": true
+    //"open_in_tab": true
+  }
+}
